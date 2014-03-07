@@ -50,7 +50,7 @@ class Songs:
 if __name__ == '__main__':
 
     cherrypy.tree.mount(
-        Songs(), '/',
+        Songs(), '',
         {'/':
             {'request.dispatch': cherrypy.dispatch.MethodDispatcher()}
         }
