@@ -43,7 +43,7 @@ class Message:
 if __name__ == '__main__':
 
     cherrypy.tree.mount(
-        Message(), '',
+        Message(), '/api',
         {'/':
             {'request.dispatch': cherrypy.dispatch.MethodDispatcher()}
         }
